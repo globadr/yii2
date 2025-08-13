@@ -95,7 +95,7 @@ class test {
         topicBox.html('');
 
         this.initialData.forEach(function (topic, index) {
-            topicBox.append(this.getElement(topic.name, topic.type, topic.id));
+            topicBox.append(this.getElement(topic.name, topic.type, topic.id, this.isCurrentTopic(topic.id)));
 
             if (this.isCurrentTopic(topic.id)) {
                 let subtopicBox = $(this.SELECTORS.subtopics);
@@ -105,7 +105,7 @@ class test {
                 descriptionBox.html('');
 
                 topic.subtopics.forEach(function (subtopic) {
-                    subtopicBox.append(this.getElement(subtopic.name, subtopic.type, subtopic.id));
+                    subtopicBox.append(this.getElement(subtopic.name, subtopic.type, subtopic.id, this.isCurrentSubtopic(subtopic.id)));
 
                     if (this.isCurrentSubtopic(subtopic.id)) {
                         descriptionBox.append(subtopic.description);
@@ -116,8 +116,8 @@ class test {
         }.bind(this));
     }
 
-    getElement(elementHTML, elementClass, elementId) {
-        return $('<div></div>', {html: elementHTML, 'class': elementClass, topicid: elementId});
+    getElement(elementHTML, elementClass, elementId, active) {
+        return $('<div></div>', {html: elementHTML, 'class': elementClass + ' ' + (active ? 'active' : ''), topicid: elementId});
     }
 
     isCurrentTopic(id) {

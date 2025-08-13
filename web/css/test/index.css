@@ -16,6 +16,7 @@
     flex-flow: column nowrap;
     row-gap: 5px;
 }
+
 .container .topics .topic {
     padding: 3px 10px;
     cursor: pointer;
@@ -24,6 +25,12 @@
     -webkit-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
     -moz-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+}
+
+.container .topics .topic.active {
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(142, 156, 20, 0.2) inset;
+    -moz-box-shadow: 0px 0px 21px 0px rgba(142, 156, 20, 0.2) inset;
+    box-shadow: 0px 0px 21px 0px rgba(142, 156, 20, 0.2) inset;
 }
 
 .container .sub-topics {
@@ -45,6 +52,12 @@
     -webkit-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
     -moz-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+}
+
+.container .sub-topics .subtopic.active {
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(142, 156, 20, 0.2) inset;
+    -moz-box-shadow: 0px 0px 21px 0px rgba(142, 156, 20, 0.2) inset;
+    box-shadow: 0px 0px 21px 0px rgba(142, 156, 20, 0.2) inset;
 }
 
 .container .description {
