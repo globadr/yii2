@@ -1,0 +1,60 @@
+.container {
+    margin-top: 15px;
+}
+
+.container .row {
+    column-gap: 5px;
+}
+
+.container .topics {
+    border: 1px solid #b5b5b5;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    height: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 5px;
+}
+.container .topics .topic {
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+}
+
+.container .sub-topics {
+    border: 1px solid #b5b5b5;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    height: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 5px;
+}
+
+.container .sub-topics .subtopic {
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+}
+
+.container .description {
+    border: 1px solid #b5b5b5;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    height: 150px;
+
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2) inset;
+}
